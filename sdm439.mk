@@ -7,6 +7,12 @@
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, device/xiaomi/sdm439-common/device-hidl.mk)
 
+# Check if MIUI CAMERA in vendor is present
+ifneq ($(wildcard vendor/miuicamera),)
+$(call inherit-product, vendor/miuicamera/config.mk)
+PRODUCT_COPY_FILES += vendor/miuicamera/common/proprietary/etc/device_features/pine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/device_features/pine.xml
+endif
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
