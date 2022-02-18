@@ -78,7 +78,7 @@ on property:sys.performance.level=1
 
 on property:sys.performance.level=2
     chmod 644 /sys/class/thermal/thermal_message/sconfig
-    write /sys/class/thermal/thermal_message/sconfig 14
+    write /sys/class/thermal/thermal_message/sconfig 13
     write /sys/class/kgsl/kgsl-3d0/devfreq/adrenoboost 1
     write /sys/class/kgsl/kgsl-3d0/force_bus_on 0
     write /sys/class/kgsl/kgsl-3d0/force_clk_on 0
@@ -109,7 +109,7 @@ on property:sys.performance.level=2
 
 on property:sys.performance.level=3
     chmod 644 /sys/class/thermal/thermal_message/sconfig
-    write /sys/class/thermal/thermal_message/sconfig 14
+    write /sys/class/thermal/thermal_message/sconfig 13
     write /sys/class/kgsl/kgsl-3d0/devfreq/adrenoboost 2
     write /sys/class/kgsl/kgsl-3d0/force_bus_on 0
     write /sys/class/kgsl/kgsl-3d0/force_clk_on 0
