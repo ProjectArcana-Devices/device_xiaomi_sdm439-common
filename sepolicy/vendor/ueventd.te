@@ -9,3 +9,6 @@ allow ueventd self:capability kill;
 # Syberia
 allow ueventd debugfs:dir { read };
 
+# Syberia 2
+allow ueventd debugfs:dir { open };
+
