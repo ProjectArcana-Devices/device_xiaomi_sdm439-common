@@ -64,8 +64,8 @@ PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
 
 # Device-specific Settings
-#PRODUCT_PACKAGES += \
-#    XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # Audio
 PRODUCT_PACKAGES += \
