@@ -5,10 +5,3 @@ allow ueventd wifi_vendor_data_file:dir r_dir_perms;
 allow ueventd wifi_vendor_data_file:file r_file_perms;
 
 allow ueventd self:capability kill;
-
-# Syberia
-allow ueventd debugfs:dir { read };
-
-# Syberia 2
-allow ueventd debugfs:dir { open };
-
