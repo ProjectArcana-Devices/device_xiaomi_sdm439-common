@@ -590,4 +590,13 @@
     
     <!-- Gaming Mode FPSInfoService FPS node file path -->
     <string name="config_gamingmode_fpsInfoSysNode" translatable="false">/sys/devices/virtual/graphics/fb0/measured_fps</string>
+    
+    <!-- Wheter device supports an gaming mode profiles -->
+    <bool name="config_gamingmode_performance">true</bool>
+
+    <!-- Wheter device supports an gaming mode zram tuning -->
+    <bool name="config_gamingmode_zram">true</bool>
+
+    <!-- Wheter device supports an gaming mode resolution changer -->
+    <bool name="config_gamingmode_display">true</bool>
 </resources>
