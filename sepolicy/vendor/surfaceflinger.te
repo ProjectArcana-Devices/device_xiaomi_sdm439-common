@@ -1,0 +1,5 @@
+
+#Arcana
+allow surfaceflinger vendor_firmware_file:file { read };
+allow surfaceflinger vendor_firmware_file:file { open };
+
