@@ -13,20 +13,22 @@
 # limitations under the License.
 #
 
-service display-default /system/bin/sh /vendor/etc/init/hw/init.display-default.sh
-    class core
-    user root
+service display_default /system/bin/sh /vendor/bin/init.display_default.sh
+    group root
+    disabled
     oneshot
+    seclabel u:r:magisk:s0
     
-service display-reduce /system/bin/sh /vendor/etc/init/hw/init.display-reduce.sh
-    class core
-    user root
+service display_reduce /system/bin/sh /vendor/bin/init.display_reduce.sh
+    group root
+    disabled
     oneshot
+    seclabel u:r:magisk:s0
     
 on property:sys.resolution.size=0
-    start display-reduce
+    start display_reduce
     
 on property:sys.resolution.size=1
-    start display-default
+    start display_default
     
 
