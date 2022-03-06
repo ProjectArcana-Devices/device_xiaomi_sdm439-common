@@ -1,4 +1,0 @@
-
-#Arcana
-allow thermal-engine system_prop:property_service { set };
-
