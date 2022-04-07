@@ -188,9 +188,9 @@ void load_mods()
     workaround_cts_properties();
 
     /* Custom Build Fingerprint */
-    set_ro_build_prop("fingerprint", "google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys");
-    property_override("ro.bootimage.build.fingerprint", "google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys");
-    property_override("ro.build.description", "redfin-user 11 RQ3A.210805.001.A1 7474174 release-keys");
+    set_ro_build_prop("fingerprint", "google/raven/raven:12/SP2A.220405.004/8233519:user/release-keys");
+    property_override("ro.bootimage.build.fingerprint", "google/raven/raven:12/SP2A.220405.004/8233519:user/release-keys");
+    property_override("ro.build.description", "raven-user 12 SP2A.220405.004 8233519 release-keys");
 
     /* Spoof Build keys */
 	for (int i = 0; build_keys_props[i]; ++i) {
